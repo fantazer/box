@@ -1,0 +1,48 @@
+//! block persons
+.persons 
+	+below(768px)
+		fw()
+		padding 50px 0
+	flex(between)
+	padding 100px 0
+.persons__el 
+	+below(768px)
+		flex(mid)
+		fl()
+		fw()
+		width 100%
+		margin-bottom 30px
+	width 23%
+.persons__user 
+	margin-bottom 30px
+.persons__name 
+	font-size 22px
+	margin-bottom 5px
+.persons__prof 
+	up()
+	color red
+	margin-bottom 30px
+	font-size 13px
+.persons__info 
+	+below(768px)
+		text-align center
+	line-height 21px 
+	margin-bottom 30px
+.persons__soc 
+	f()
+.persons__soc-el 
+	flex(mid)
+	tr(all)
+	border 1px solid grey
+	margin-right 5px
+	padding 7px
+	&:hover
+		border 1px solid black
+		.icons
+			fill black
+	.icons
+		size 15 15
+		fill grey
+
+//.icons 
+//!block persons end

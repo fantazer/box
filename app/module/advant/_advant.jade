@@ -1,0 +1,13 @@
+mixin advant()
+	//block advant
+	.main-cont
+		.adv
+			- each item in advant 
+				.adv__el
+					.adv__icon 
+						svg.adv__icon-el
+							use(xlink:href="#{item.icon}")
+					.adv__title #{item.title}
+					.adv__text #{item.text}
+
+	//block advant end

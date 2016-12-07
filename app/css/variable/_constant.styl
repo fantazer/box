@@ -1,0 +1,238 @@
+// ============================ Curent color ============================
+
+// Colors
+//
+// Styleguide 1
+
+// Colors - all 
+//
+ // #001F3F - : navy 
+ // #0074D9 - : blue 
+ // #7FDBFF - : aqua 
+ // #39CCCC - : teal 
+ // #3D9970 - : olive 
+ // #2ECC40 - : green 
+ // #01FF70 - : lime 
+ // #FFDC00 - : yellow 
+ // #FF851B - : orange 
+ // #FF4136 - : red 
+ // #F012BE - : fuchsia 
+ // #B10DC9 - : purple 
+ // #85144B - : maroon 
+ // #FFFFFF - : white 
+ // #DDDDDD - : silver 
+ // #AAAAAA - : gray 
+ // #111111 - : black 
+//
+// Markup: <div style="background: {{modifier_class}};color:white;padding:20px;" class="styleguide-color">{{modifier_class}}</div>
+//
+// Styleguide 1.1
+
+navy = #001F3F
+blue = #0074D9
+aqua = #7FDBFF
+teal = #39CCCC
+olive = #3D9970
+green = #2ECC40
+lime = #01FF70
+yellow = #FFDC00
+orange = #FF851B
+red = #FF4136
+fuchsia = #F012BE
+purple = #B10DC9
+maroon = #85144B
+white = #FFFFFF
+silver = #DDDDDD
+gray = #AAAAAA
+black = #111111
+
+// Colors - Current 
+//
+ // #e84545 - : red 
+ // #53354a - : brown 
+ // #3a3e64 - : deep 
+ // #313454 - : deep--dark 
+ // #6c7279 - : grey 
+//
+// Markup: <div style="background: {{modifier_class}};color:white;padding:20px;" class="styleguide-color">{{modifier_class}}</div>
+//
+// Styleguide 1.2
+
+
+red = #e84545
+brown = #53354a
+deep = #3a3e64
+deep--dark = #313454
+grey = #c6cacc
+
+//  ============================ Typography ============================ 
+
+// Typography
+//
+//
+// Styleguide 2
+
+// Typography-size
+//
+// Main font - $v-font =  PT Sans
+//.type--lg - = 28px
+//.type--md - = 22px
+//.type--main	- = 16px
+//.type--sm  - = 13px
+//
+// Markup:
+// <span class="{{modifier_class}}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, quidem!</span>
+//
+// Styleguide 2.1
+
+$main-text-color = #6c7279
+$link-color = black
+$link-color-visited = grey
+$link-color-hover = black
+
+//webfont('PT Sans', 'PT Sans', 'normal')
+$v-font =  Raleway
+
+
+$weigh-light = 300
+$weigh-normal = 400
+$weigh-bold = 700
+
+typeSize(fontSm,font)
+	+below(768px)
+		font-size font px
+	font-size fontSm px
+
+.type--lg
+	typeSize(28,20)
+	
+.type--md
+	typeSize(22,16)
+	
+.type--main
+	typeSize(14,12)
+
+.type--sm
+	typeSize(13,10)
+
+
+// Typography-type
+//
+//.type--italy  - font type italy
+//.type--mid  - font type center
+//.type--bold - font type bold
+//
+// Markup:
+// <span class="{{modifier_class}}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, quidem!</span>
+//
+// Styleguide 2.2	
+
+.type--up
+	up()
+.type--italy
+	font-style italic
+.type--mid
+	text-align center
+.type--bold
+	font-weight $weigh-bold
+.type--light
+	font-weight $weigh-light
+	
+a
+	text-decoration none
+	color $link-color
+	
+a:hover
+	text-decoration none
+	color  $link-color-hover
+	
+// ============================ Buttons ============================
+
+// Buttons
+//
+//.btn - .btn
+//.btn--red.btn- .btn--red
+//
+// Markup:
+// <a href="#" class="{{modifier_class}}">Link</a>
+//<button type="submit" class="{{modifier_class}}">button</button>
+//<input type="submit" class="{{modifier_class}}" value="Input:submit" />
+//<input type="button" class="{{modifier_class}}" value="Input:button" />
+//
+// Styleguide 3
+
+
+btnStyle(bg-btn,color-btn)
+	background bg-btn
+	color color-btn
+	&:hover
+		background darken(bg-btn,20)
+		color color-btn
+
+btnStyleLight(br-btn,color-btn)
+	color color-btn
+	border br-btn solid color-btn
+	&:hover
+		color darken(color-btn,20)
+		border br-btn solid darken(color-btn,20)
+		
+.btn
+	+below(768px)
+		padding 10px 30px
+	text-transform uppercase
+	tr(all)
+	display inline-block
+	font-size 13px
+	padding 20px 50px
+	&:hover
+		cursor pointer
+	
+.btn--md
+	padding 10px 20px
+	
+.btn--red
+	btnStyle(red,white)
+	
+button
+	font-family $v-font
+
+// ============================ Inputs ============================
+
+// Input
+//
+//
+// Styleguide 4
+
+
+//Select
+//
+// Markup:
+//	<label for="select-choice">Select Dropdown Choice:</label>
+//	<select name="select-choice" id="select-choice">
+//	<option value="Choice 1">Choice 1</option>
+//	<option value="Choice 2">Choice 2</option>
+//	<option value="Choice 3">Choice 3</option>
+//	</select>
+//
+// Styleguide 4.1
+
+// Input
+//
+// Markup:
+//<label for="name">Text Input:</label>
+//<input type="text" name="name" id="name" value="" tabindex="1" placeholder="введите значение"/>
+//
+// Styleguide 4.2
+
+input,textarea,select
+	border 0px
+	padding 10px 15px
+	border 1px solid grey
+	resize: none
+	outline: 0 !important
+	border-radius 4px
+	font-family $v-font
+	display block!important
+	margin-bottom 10px
+
+

@@ -1,0 +1,16 @@
+{
+	"block":{
+		"header":"header",
+		"advant":"advant",
+		"templ":"templ",
+		"persons":"persons",
+		"slider":"slider",
+		"take":"take",
+		"take":"take",
+		"footer":"footer"
+		
+	},
+	"page":{
+		"index":"index"
+	}
+}

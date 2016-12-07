@@ -1,0 +1,35 @@
+//! block templ
+.templ 
+	flex(between)
+	fw()
+.templ__el 
+	+below(978px)
+		width 50%
+	+below(640px)
+		width 100%
+	width 25%
+	height 350px
+	background-size cover
+	background-position center
+	background-repeat no-repeat
+	position relative
+	overflow hidden
+	&:hover
+		.templ__el-cover 
+			transform translateY(0%)
+.templ__el-cover 
+	flex(mid)
+	tr(all)
+	position absolute
+	width 100%
+	height 100%
+	background rgba(232, 69, 69, 0.73) 
+	transform translateY(-100%)
+.templ__el-info 
+	color white
+	text-align center
+.templ__el-title 
+	margin-bottom 10px
+	font-weight 700 
+//.templ__el-text 
+//!block templ end

@@ -1,0 +1,28 @@
+mixin footer()
+	//block footer
+	.footer-wraper
+		.main-cont
+			.footer
+				.footer__el
+					.footer__el-title Location
+					p 3481 Melrose Place
+					p Beverly Hills, CA 90210
+				.footer__el
+					.footer__el-title Share with Love
+					.footer__soc
+						a(href="#").footer__soc-el
+							+icon("facebook","icons")
+						a(href="#").footer__soc-el
+							+icon("twitter","icons")
+						a(href="#").footer__soc-el
+							+icon("linkedin","icons")
+				.footer__el
+					.footer__el-title About ActiveBox
+					p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.
+	.footer-sub
+		.footer-sub__info Copyright © 2015 ActiveBox. All Rights Reserved
+		.footer-sub__info Made with 
+			.footer-sub__icon
+				+icon("heart","icon")
+			span  by Anatoly Kuznetsov
+	//block footer end

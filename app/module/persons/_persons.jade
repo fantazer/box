@@ -1,0 +1,20 @@
+mixin persons()
+	//block persons
+	.main-cont
+		.persons
+			- for (var i = 0; i < 4; i++)
+				.persons__el
+					.persons__user
+						img(src="img/user-#{i+1}.png", alt="")
+					.persons__name Ruth Woods
+					.persons__prof Founder, CEO
+					.persons__info Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
+					.persons__soc
+						a(href="#").persons__soc-el
+							+icon("facebook","icons")
+						a(href="#").persons__soc-el
+							+icon("twitter","icons")
+						a(href="#").persons__soc-el
+							+icon("linkedin","icons")
+
+	//block persons end

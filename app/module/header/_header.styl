@@ -1,0 +1,95 @@
+.header
+	+below(768px)
+		height 100vh
+	height 700px
+	bgi("baner.png")
+	background-position center center
+	background-repeat no-repeat 
+	background-size cover
+	position relative
+	.main-cont 
+		flex(mid)
+		position relative
+		height 100%
+.nav-wraper 
+	position absolute
+	width 100%
+	left 0
+	top 0
+.nav 
+	+below(768px)
+		fw()
+		padding 20px 10px
+	flex(between)
+	position relative
+	padding 30px 10px
+	border-bottom 1px solid rgba(255, 255, 255, 0.15)
+.logo
+	width 30%
+.nav-menu 
+	+below(768px)
+		display none
+	+above(768px)
+		display block!important
+	width 60%
+.nav-menu__wraper
+	+below(768px)
+		fw()
+		position absolute
+		left 0
+		top 100%
+		width 100%
+		background #0f1229 
+	flex(between)
+.nav-menu__el 
+	+below(768px)
+		width 100%
+		text-align center
+		padding 15px 0
+		border-bottom 1px solid #181d3f
+		&:last-child
+			border-bottom  0px
+	up()
+	tr(all)
+	color white
+	&:hover
+		color darken(white,30)
+.nav-slogan 
+	flex(mid)
+	fl()
+	fw()
+	width 80%
+.nav-slogan__main
+	+below(768px)
+		font-size 26px
+	up()
+	text-align center
+	color white
+	font-size 65px
+	font-weight 700
+	margin-top 70px
+	margin-bottom 30px
+.nav-slogan__sub
+	+below(768px)
+		font-size 12px
+		margin-bottom 15%
+	color white
+	text-align center 
+	font-size 22px
+	margin-bottom 70px
+.nav-slogan__btn 
+	@extend .btn
+	@extend .btn--red
+.filter
+	position absolute
+	top 0
+	left 0
+	height 100%
+	width 100%
+	background rgba(19, 16, 38, 0.45); 
+.nav-toggle
+	.icon
+		cp()
+		size 25
+		fill white
+		

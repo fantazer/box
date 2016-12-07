@@ -1,0 +1,30 @@
+mixin header()
+	//block header 
+	.header
+		.filter
+		.main-cont
+			.nav-wraper
+				.nav
+					a(href="#").logo
+						img(src="img/logo.png", alt="")
+					.nav-menu
+						.nav-menu__wraper
+							- var arr =['Features','Works','Our Team','Testimonials','Download'];
+							- each val in arr 
+								a(href="#").nav-menu__el #{val}
+					.nav-toggle
+						+icon("menu-button","icon")
+			.nav-slogan
+				.nav-slogan__main Your Favorite One Page Multi Purpose Template
+				.nav-slogan__sub Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.
+				a(href="#").nav-slogan__btn Find Out More
+	//block header end
+
+
+
+
+
+
+
+
+

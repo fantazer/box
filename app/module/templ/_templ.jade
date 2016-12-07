@@ -1,0 +1,10 @@
+mixin templ()
+	//block templ
+	.templ
+		- for (var i = 0; i < 8; i++)
+			a( href="#" class="templ__el" style="background-image:url(img/img-item-#{i+1}.png)")
+				.templ__el-cover
+					.templ__el-info
+						.templ__el-title Project Name
+						.templ__el-text User Interface Design
+	//block templ end
