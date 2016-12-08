@@ -72,7 +72,6 @@ $(document).ready(function(){
 ;( function( window, document )
 {
 	'use strict';
-
 	var file  = 'img/sprite.html',
 		revision = 1;
 
